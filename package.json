@@ -1,0 +1,22 @@
+{
+  "name": "polyglot-java-js-r",
+  "version": "1.0.0",
+  "description": "Polyglot application(using the most popular programming languages: java, python, node and R) running with GraalVM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjeronimomx/polyglot-java-js-r.git"
+  },
+  "author": "@cjeronimomx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjeronimomx/polyglot-java-js-r/issues"
+  },
+  "homepage": "https://github.com/cjeronimomx/polyglot-java-js-r#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

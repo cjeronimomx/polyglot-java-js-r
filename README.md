@@ -1,5 +1,5 @@
-# GraalVM Polyglot
-> Polyglot application(using the most popular programming languages: java, python and javascript) running with GraalVM
+# GraalVM Polyglot Application
+> Polyglot application using the most popular programming languages: java, python, node and R running with Graal virtual machine
 
 ## Prerequisites
 #### SDKman
@@ -24,9 +24,38 @@ on top of the Java SE 1.8.0_212.
 In your terminal run the following commands:
 ```bash
 sdk ls java
-sdk i java 1.0.0-rc-19-grl
-sdk u java 1.0.0-rc-19-grl
+sdk i java 19.0.0-grl
+sdk u java 19.0.0-grl
 gu install native-image
 ```
 gu = Graal Update, the last command is necesary for support native image with graal VM
 
+#### Repository
+Download or clone this git repository and navigate into the directory `polyglot-java-js-r`
+
+```bash
+git clone https://github.com/cjeronimomx/polyglot-java-js-r.git
+cd polyglot-java-js-r
+```
+
+Then install dependencies executing
+
+```bash
+~/.sdkman/candidates/java/19.0.0-grl/bin/npm install
+```
+
+## Running
+
+You need run the app as a node application, only you need two more arguments:
+
+1. **--jvm** because we are using java code
+
+2. **--polyglot** because we need run an application that is using java, node, python and R languages
+
+```bash
+~/.sdkman/candidates/java/19.0.0-grl/bin/node --jvm --polyglot index.js 
+```
+
+Then go to your favorite web browser an type: [http://localhost:4004](http://localhost:4004)
+
+**That´s it** you can see running a simple but an amazing polyglot application
